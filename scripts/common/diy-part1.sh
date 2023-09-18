@@ -12,12 +12,14 @@
 
 # Uncomment a feed source
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
+./scripts/feeds update -a && ./scripts/feeds install -a
 
 # Add a feed source
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
-echo "src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-packages.git;main" >> "feeds.conf.default"
-echo "src-git passwall https://github.com/xiaorouji/openwrt-passwall.git;main" >> "feeds.conf.default"
+rm -rf feeds/luci/applications/luci-app-passwall
+svn export https://github.com/xiaorouji/openwrt-passwall/trunk/luci-app-passwall feeds/luci/applications/luci-app-passwall
+git clone https://github.com/xiaorouji/openwrt-passwall-packages.git feeds/packages/
 svn export https://github.com/immortalwrt/packages/trunk/net/ddns-go openwrt/feeds/packages/net/ddns-go
 svn export https://github.com/immortalwrt/luci/trunk/applications/luci-app-ddns-go openwrt/feeds/luci/applications/luci-app-ddns-go
 rm -rf openwrt/feeds/packages/lang/golang

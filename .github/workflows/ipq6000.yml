@@ -72,11 +72,7 @@ jobs:
       run: cd openwrt && ./scripts/feeds update -a
 
     - name: Install feeds
-      run: svn export https://github.com/immortalwrt/packages/trunk/net/ddns-go openwrt/feeds/packages/net/ddns-go
-           svn export https://github.com/immortalwrt/luci/trunk/applications/luci-app-ddns-go openwrt/feeds/luci/applications/luci-app-ddns-go
-           rm -rf openwrt/feeds/packages/lang/golang
-           svn co https://github.com/openwrt/packages/branches/openwrt-23.05/lang/golang openwrt/feeds/packages/lang/golang 
-           cd openwrt && ./scripts/feeds install -a
+      run: cd openwrt && ./scripts/feeds install -a
 
     - name: Load custom configuration
       run: |

@@ -18,5 +18,7 @@
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 echo "src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-packages.git;main" >> "feeds.conf.default"
 echo "src-git passwall https://github.com/xiaorouji/openwrt-passwall.git;main" >> "feeds.conf.default"
-
-
+svn export https://github.com/immortalwrt/packages/trunk/net/ddns-go openwrt/feeds/packages/net/ddns-go
+svn export https://github.com/immortalwrt/luci/trunk/applications/luci-app-ddns-go openwrt/feeds/luci/applications/luci-app-ddns-go
+rm -rf openwrt/feeds/packages/lang/golang
+svn co https://github.com/openwrt/packages/branches/openwrt-23.05/lang/golang openwrt/feeds/packages/lang/golang 

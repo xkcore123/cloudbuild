@@ -17,9 +17,9 @@
 # Add a feed source
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
-rm -rf feeds/luci/applications/luci-app-passwall
-svn export https://github.com/xiaorouji/openwrt-passwall/trunk/luci-app-passwall feeds/luci/applications/luci-app-passwall
-git clone https://github.com/xiaorouji/openwrt-passwall-packages.git feeds/packages/passwall_packages
+#rm -rf feeds/luci/applications/luci-app-passwall
+#svn export https://github.com/xiaorouji/openwrt-passwall/trunk/luci-app-passwall feeds/luci/applications/luci-app-passwall
+#git clone https://github.com/xiaorouji/openwrt-passwall-packages.git feeds/packages/passwall_packages
 svn export https://github.com/immortalwrt/packages/trunk/net/ddns-go feeds/packages/net/ddns-go
 svn export https://github.com/immortalwrt/luci/trunk/applications/luci-app-ddns-go feeds/luci/applications/luci-app-ddns-go
 rm -rf openwrt/feeds/packages/lang/golang

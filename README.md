@@ -28,7 +28,6 @@
 7.此页面发布的ipq6000固件不集成无线功能。  
 
 ## 集成插件列表
-luci-app-passwall
 luci-app-socat 
 luci-app-ddns-go
 luci-app-msd_lite  
@@ -36,7 +35,6 @@ luci-app-wol
 luci-app-upnp   
 luci-app-cpufreq  
 luci-app-frpc
-luci-app-unblockneteasemusic
 luci-app-tailscale  
 
 ## 固件预览

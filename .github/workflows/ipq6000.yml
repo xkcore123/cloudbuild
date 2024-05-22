@@ -36,8 +36,8 @@ env:
 jobs:
   build:
     runs-on: ubuntu-20.04
-
-  steps:
+    
+    steps:
     
     - name: Apt Update
       env:

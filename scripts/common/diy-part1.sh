@@ -26,4 +26,4 @@ rm -rf openwrt/feeds/packages/lang/golang
 svn co https://github.com/openwrt/packages/branches/openwrt-23.05/lang/golang feeds/packages/lang/golang 
 
 #luci-app-lucky
-git clone https://github.com/sirpdboy/luci-app-lucky.git package/lucky
+git clone  https://github.com/gdy666/luci-app-lucky.git package/lucky

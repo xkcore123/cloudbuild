@@ -29,16 +29,10 @@
 
 ## 集成插件列表
 luci-app-socat 
-luci-app-ddns-go
+luci-app-lucky
 luci-app-msd_lite  
 luci-app-wol  
 luci-app-upnp   
 luci-app-cpufreq  
 luci-app-frpc
-luci-app-tailscale  
-
-## 固件预览
-![image](https://github.com/sdf8057/cloudbuild/blob/main/pic/overview.png)
-
-## 微信打赏
-![image](https://github.com/sdf8057/cloudbuild/blob/main/pic/reward_qrcode.png)
+kmod-tun

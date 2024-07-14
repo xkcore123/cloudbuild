@@ -17,7 +17,6 @@
 # Add a feed source
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
-echo 'src-git eqosplus  https://github.com/sirpdboy/luci-app-eqosplus' >>feeds.conf.default
 #rm -rf feeds/luci/applications/luci-app-passwall
 #svn export https://github.com/xiaorouji/openwrt-passwall/trunk/luci-app-passwall feeds/luci/applications/luci-app-passwall
 #git clone https://github.com/xiaorouji/openwrt-passwall-packages.git feeds/packages/passwall_packages
@@ -28,3 +27,5 @@ svn co https://github.com/openwrt/packages/branches/openwrt-23.05/lang/golang fe
 
 #luci-app-lucky
 git clone  https://github.com/gdy666/luci-app-lucky.git package/lucky
+git clone https://github.com/sirpdboy/luci-app-eqosplus package/luci-app-eqosplus
+
